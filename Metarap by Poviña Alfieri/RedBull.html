@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Red Bull</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.classname {
+-webkit-animation: cssAnimation 1.5952s 16 ease;
+-moz-animation: cssAnimation 1.5952s 16 ease;
+-o-animation: cssAnimation 1.5952s 16 ease;
+}
+@-webkit-keyframes cssAnimation {
+from { -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -webkit-transform: rotate(0deg) scale(1.076) skew(1deg) translate(0px); }
+}
+@-moz-keyframes cssAnimation {
+from { -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -moz-transform: rotate(0deg) scale(1.076) skew(1deg) translate(0px); }
+}
+@-o-keyframes cssAnimation {
+from { -o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px); }
+to { -o-transform: rotate(0deg) scale(1.076) skew(1deg) translate(0px); }
+}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+.div1 {
+  width: 336px;
+  height: 576px;
+  padding: 10px;
+  border: 5px solid #aaaaaa;
+  border-color: gold;
+  background-image: url(RedBullGanador.jpg);
+}
+
+
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+<body>
+<center><div class="classname"><h1><b>Quien es el ganador de la RedBull 2018?</b></h1></div>
+  <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></center>
+  <br>
+<center>
+   <div style="float:left">
+    <img id="drag1" src="REDBULLWos.jpg" draggable="true" ondragstart="drag(event)">
+    </div>
+      <div style="float:left">
+    <img id="drag1" src="REDBULLPepeGrillo.png" draggable="true" ondragstart="drag(event)">
+      </div>
+      <div style="float:left">
+    <img id="drag1" src="REDBULLBnet.png" draggable="true" ondragstart="drag(event)">
+      </div>
+      <div style="float:left">
+    <img id="drag1" src="REDBULLAczino.png" draggable="true" ondragstart="drag(event)">
+      </div>
+</center>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:540px">
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>Sobre la Red Bull</b></h4>
+    <img src="RedBullLogo.jpg" alt="Me" class="w3-image w3-padding-32" width="400" height="450">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>¿Que es?</h4>
+      <p>La Red Bull Batalla De Los Gallos, conocida también como Red Bull BDLG o BDLG, es una competición anual de Freestyle comenzada en 2005 en la cual participan todos los países de habla hispana. Su nombre se debe a que está patrocinada por la bebida Red Bull.
+      </p>
+      <hr class="w3-opacity">
+      </div>
+    </div>
+  </div>
+
+  
+</body>
+</html>

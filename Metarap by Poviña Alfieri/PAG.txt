@@ -1,0 +1,66 @@
+5to = map
+DEM = Slideshow gallery
+Redbull = Drag and drop (quien ganara)
+
+
+
+Animaciones
+Audios y Videos: Mejores momentos
+
+--------------------------------------------
+Drag and Drop: minijuego
+<style>
+#div1 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<p>Drag the W3Schools image into the rectangle:</p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
+
+
+Trucos
+Bloquer boton derecho
+Whatsapp
+Listas
+Slideshowgallery: Portada
+* Icono favorito
+* Links
+
+Imagen con link: Competencias
+Mapa de imagenes (<map>): Foto de raperos juntos
+<img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+<map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+  <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+  <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+</map>
+-------------------------
+
+Formulario de subscripcion
+CV de la webmaster
+Integrar  botones para abrir un enlace, para descargar un archivo, para No dejar seleccionar el texto, bloquear  “Click Der” y “CtrL”, imagenes,  cómo mostrar al visitante un mensaje (alerta) al entrar a tu sitio web, cómo insertar  el  “Ir Arriba”, cómo insertar un video; cómo insertar una barra de menú,  una Social Sticky Bar, una Galería de fotos y un formulario desde W3SCHOOLS* 
